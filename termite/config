@@ -1,0 +1,113 @@
+[options]
+#allow_bold = true
+#audible_bell = false
+#bold_is_bright = true
+#cell_height_scale = 1.0
+#cell_width_scale = 1.0
+#clickable_url = true
+#dynamic_title = true
+#font = Mononoki Nerd Font Mono 12
+font = GohuFont Nerd Font Mono 12
+#fullscreen = true
+#icon_name = terminal
+#mouse_autohide = false
+#scroll_on_output = false
+#scroll_on_keystroke = true
+# Length of the scrollback buffer, 0 disabled the scrollback buffer
+# and setting it to a negative value means "infinite scrollback"
+scrollback_lines = 10000
+#search_wrap = true
+#urgent_on_bell = true
+#hyperlinks = false
+
+[colors]
+# Base16 Harmonic16 Dark
+# Author: Jannik Siebert (https://github.com/janniks)
+
+foreground_bold     = #e5ebf1
+#cursor              = #e5ebf1
+cursor		    = #DCDCDC
+cursor_foreground   = #0b1c2c
+#background	    = #1D1F28
+
+# 16 color space
+# theme: NIGHT
+
+#foreground	    = #DCDCDC
+#background          = rgba(30, 32, 41, 0.98)
+#color0	= #282A36
+#color1 	= #F37F97
+#color2	= #5ADECD
+#color3	= #F2A272
+#color4	= #8897F4
+#color5	= #C574DD
+#color6	= #79E6F3
+#color7	= #DCDCDC
+#color8	= #282A36
+#color9	= #F37F97
+#color10	= #5ADECD
+#color11	= #F2A272
+#color12	= #8897F4
+#color13	= #C574DD
+#color14	= #79E6F3
+#color15	= #DCDCDC
+
+
+# theme: SUNSET
+
+background = #191919
+foreground = #fafafa
+color0 = #191919
+color1 = #FF4E50
+color2 = #FC913A
+color3 = #F9D423
+color4 = #EDE574
+color5 = #E1F5C4
+color6 = #a0a0a0
+color7 = #fafafa
+color8 = #4f4f4f
+color9 = #FF4E50
+color10 = #FC913A
+color11 = #F9D423
+color12 = #EDE574
+color13 = #E1F5C4
+color14 = #a0a0a0
+color15 = #fafafa
+
+# Black, Gray, Silver, White
+#color0  = #0b1c2c
+#color8  = #627e99
+#color7  = #cbd6e2
+#color15 = #f7f9fb
+
+# Red
+#color1  = #bf8b56
+#color9  = #bf8b56
+
+# Green
+#color2  = #56bf8b
+#color10 = #56bf8b
+
+# Yellow
+#color3  = #8bbf56
+#color11 = #8bbf56
+
+# Blue
+#color4  = #8b56bf
+#color12 = #8b56bf
+
+# Purple
+#color5  = #bf568b
+#color13 = #bf568b
+
+# Teal
+#color6  = #568bbf
+#color14 = #568bbf
+
+# Extra colors
+color16 = #bfbf56
+color17 = #bf5656
+color18 = #223b54
+color19 = #405c79
+color20 = #aabcce
+color21 = #e5ebf1
