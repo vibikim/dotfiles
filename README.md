@@ -9,6 +9,9 @@ _Some are normie programs, please don't judge_
 
 * awesomewm
 * kitty   (but I also have a termite config in there)
+* spacefm
+* rofi
+* dmenu
 * vim
 * copyq
 * flameshot
