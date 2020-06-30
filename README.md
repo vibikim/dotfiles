@@ -18,6 +18,7 @@ _Some are normie programs, please don't judge_
 * picom/compton
 * xfce4-power-manager
 * nm-applet
+* polkit-gnome
 * firefox
 * rhythmbox
 * lxde-apperance (optional)

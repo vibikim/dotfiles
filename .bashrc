@@ -144,6 +144,7 @@ ex ()
 export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1;35"
 
 # User added aliases
+alias yeet='yay'
 
 alias gcloud-ssh-bot='gcloud beta compute --project "vibot-discord" ssh --zone "europe-west3-c" "redbot"'
 alias gcloud-ssh-multipurpose='gcloud beta compute --project "multipurpose-vps-264707" ssh --zone "us-west2-c" "vibikim@halo" --ssh-flag="-p 22"'
@@ -154,3 +155,6 @@ alias rclone-up-music="rclone sync /run/media/vibikim/WAD/Music/ gdrive_music:/M
 
 alias rclone-down-projecte_drawings="rclone sync 'Main gDrive':/'Projecte drawings' ~/Documents/Projecte\ drawings/ -P"
 alias rclone-down-music="rclone sync gdrive_music:/Music /run/media/vibikim/WAD/Music/ -P"
+
+#osu on wine
+alias osu="WINEPREFIX="$HOME/osu/" WINEARCH=win32 PATH=/opt/wine-osu/bin:$PATH"
