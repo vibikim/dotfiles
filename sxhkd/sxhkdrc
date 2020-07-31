@@ -1,0 +1,24 @@
+###
+# LAUNCH APPS
+###
+
+super + Return
+	$TERMINAL
+super + shift + w
+	$BROWSER
+super + shift + m
+	rhythmbox
+super + shift + v
+	pavucontrol
+super + shift + f
+	$FILEMANAGER
+
+###
+# MISC
+###
+
+# ROFI run menu
+super + d
+	rofi -show run
+#Take a screenshot
+
