@@ -8,9 +8,15 @@ sxhkd &
 nitrogen --restore
 picom &
 dunst &
+copyq &
+nm-applet &
+blueman-applet &
+xfce4-power-manager &
+numlockx on &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-#((defapt cred ca bspwm se poate ocupa singur de asta))TODO mini script care detecteaza monitoare si le da workspace-uri dinamic
-bspc monitor -d I II III IV V VI VII VIII IX
+bspc monitor -d 1 2 3 4 5 6
+bspc monitor VGA1 7 8 9
 
 
 bspc config focus_follows_pointer true
@@ -51,9 +57,13 @@ bspc config focused_private_border_color    ""
 # APP RULES
 ###
 
-bspc rule -a Gimp		desktop='^9' state=floating follow=on
+bspc rule -a Gimp		desktop='^6' state=floating follow=on
 bspc rule -a Pavucontrol	state=floating
-bspc rule -a copyq		state=floating  #TODO? daca nu se spawneaza in coltul ecranului atunci fa-l sa faca asa manual
+bspc rule -a copyq		state=floating
+bspc rule -a Blueman-manager	state=floating
 bspc rule -a Screenkey		manage=off
 bspc rule -a Firefox		desktop='^1'
 bspc rule -a Discord		desktop='^4'
+bspc rule -a AlarmWindow	state=floating
+bspc rule -a pop-up		state=floating
+bspc rule -a setup		state=floating
