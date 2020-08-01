@@ -7,7 +7,7 @@
 #clickable_url = true
 #dynamic_title = true
 #font = Mononoki Nerd Font Mono 12
-font = GohuFont Nerd Font Mono 10
+font = Mononoki Nerd Font Mono 10
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false

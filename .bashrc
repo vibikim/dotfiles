@@ -2,6 +2,7 @@
 # ~/.bashrc
 #
 
+export vblank_mode=0
 [[ $- != *i* ]] && return
 
 colors() {
