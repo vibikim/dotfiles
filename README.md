@@ -5,21 +5,22 @@ It's mostly defaults or other's configs slightly modified to my taste.
 
 What I use right now (stuff I have to install on a fresh linux install):
 
-_Some are normie programs, please don't judge_
-
-* awesomewm
-* kitty   (but I also have a termite config in there)
-* spacefm
-* rofi
-* dmenu
+* bspwm
+* sxhkd
+* polybar
+* dunst
+* kitty   (will do st in the future)
+* pcmanfm and lf
+* rofi AND dmenu (weird i know)
 * vim
 * copyq
 * flameshot
 * picom/compton
 * xfce4-power-manager
 * nm-applet
-* polkit-gnome
+* polkit-gnome -- TODO migrate to the lxde polkit
 * firefox
-* rhythmbox
+* rhythmbox -- TODO migrate to a MPD based music player
 * lxde-apperance (optional)
 * NerdFonts
+* **DASH set as /bin/sh** (Arch Linux)
