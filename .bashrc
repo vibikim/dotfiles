@@ -2,10 +2,9 @@
 # ~/.bashrc
 #
 
+export vblank_mode=0
 [[ $- != *i* ]] && return
 
-export EDITOR=/usr/bin/vim
-export TERMINAL=termite
 colors() {
 	local fgc bgc vals seq0
 
