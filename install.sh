@@ -17,6 +17,7 @@ gohome .vimrc
 
 goconfig bspwm
 goconfig dunst
+goconfig polybar
 goconfig kitty
 goconfig sxhkd
 goconfig picom.conf
