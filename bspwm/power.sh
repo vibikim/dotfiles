@@ -1,8 +1,7 @@
 #!/bin/sh
 
 sure() {
-	options="Yes
-	No"
+	options="Yes\nNo"
 
 	chosen=`echo "$options" | dmenu -i -p "Are you sure?" -sb red -sf black`
 	case "$chosen" in

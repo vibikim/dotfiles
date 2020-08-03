@@ -16,7 +16,7 @@ numlockx on &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 bspc monitor -d 1 2 3 4 5 6
-bspc monitor VGA1 7 8 9
+bspc monitor VGA-0 7 8 9
 
 
 bspc config focus_follows_pointer true
@@ -61,6 +61,7 @@ bspc rule -a Gimp		desktop='^6' state=floating follow=on
 bspc rule -a Pavucontrol	state=floating
 bspc rule -a copyq		state=floating
 bspc rule -a Blueman-manager	state=floating
+bspc rule -a Arandr		state=floating
 bspc rule -a Screenkey		manage=off
 bspc rule -a Firefox		desktop='^1'
 bspc rule -a Discord		desktop='^4'
