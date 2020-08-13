@@ -15,6 +15,7 @@ What I use right now (stuff I have to install on a fresh linux install):
 * vim
 * copyq
 * flameshot
+* nitrogen
 * picom/compton
 * xfce4-power-manager
 * nm-applet
