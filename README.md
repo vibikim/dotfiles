@@ -18,9 +18,9 @@ What I use right now (stuff I have to install on a fresh linux install):
 * picom/compton
 * xfce4-power-manager
 * nm-applet
-* polkit-gnome -- TODO migrate to the lxde polkit
+* lxqt-policykit
 * firefox
 * rhythmbox -- TODO migrate to a MPD based music player
-* lxde-apperance (optional)
+* lxapperance (optional)
 * NerdFonts
 * **DASH set as /bin/sh** (Arch Linux)
