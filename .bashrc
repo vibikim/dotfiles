@@ -145,6 +145,7 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 
 # User added aliases
 alias yeet='yay'
+alias vim='nvim'
 
 alias gcloud-ssh-bot='gcloud beta compute --project "vibot-discord" ssh --zone "europe-west3-c" "redbot"'
 alias gcloud-ssh-multipurpose='gcloud beta compute --project "multipurpose-vps-264707" ssh --zone "us-west2-c" "vibikim@halo" --ssh-flag="-p 22"'

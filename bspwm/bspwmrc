@@ -50,10 +50,28 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 
-#TODO adauga culori din Xresources
 ###
 # COLORS
 ###
+
+# Read colors from Xresources and use them upfront
+# I am sorry for how cursed this is
+
+clist=`xrdb -query`
+echo "$clist" | while read line
+do
+	name=$(echo $line | cut -d: -f1)
+	color=$(echo $line | cut -d: -f2)
+	case "$name" in
+		"*.color6")	bspc config active_border_color $color \
+				&& bspc config presel_feedback_color $color ;;
+		"*.background")	bspc config normal_border_color $color ;;
+		"*.foreground")	bspc config focused_border_color $color ;;
+	esac
+done
+
+
+
 #bspc config normal_border_color
 #bspc config active_border_color
 #bspc config focused_border_color
