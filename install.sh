@@ -23,3 +23,6 @@ goconfig kitty
 goconfig sxhkd
 goconfig picom.conf
 goconfig nvim
+
+#install fonts
+cp -r $PWD/polybar/fonts/* ~/.local/share/fonts
