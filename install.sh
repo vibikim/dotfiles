@@ -21,3 +21,6 @@ goconfig polybar
 goconfig kitty
 goconfig sxhkd
 goconfig picom.conf
+
+#install fonts
+cp -r $PWD/polybar/fonts/* ~/.local/share/fonts
