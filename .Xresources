@@ -2,7 +2,7 @@
 *.foreground:   #cee3eb
 *.background:   #010202
 *.cursorColor:  #cee3eb
-*.font:		TerminessTTF Nerd Font Mono:size=12
+! *.font:		TerminessTTF Nerd Font Mono
 
 ! black
 *.color0:       #020405
