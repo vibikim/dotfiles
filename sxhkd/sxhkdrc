@@ -28,8 +28,8 @@ super + shift + o
 	$TERMINAL -e htop
 super + shift + Escape
 	xfce4-taskmanager
-super + shift + v
-	$TERMINAL -e vim -c Ex
+super + shift + e
+	$TERMINAL -e nvim -c Ex
 
 
 ###
