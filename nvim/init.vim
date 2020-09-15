@@ -26,7 +26,9 @@ map <leader>sr :setlocal spell! spelllang=ro<CR>
 " ###
 call plug#begin('~/.local/share/nvim/plugged')
 
+" REMINDER - on a new system install go for hexokinase (color preview)
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -41,6 +43,7 @@ autocmd VimEnter * HexokinaseTurnOn
 " # Key Remapping
 " ###
 
+" Reload this config file
 map <C-s> :source ~/.config/nvim/init.vim<CR>
 nnoremap <leader>e :Ex<CR>
 
