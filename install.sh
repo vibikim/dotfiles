@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# run this functions for files that go directily into the home directory
+# run this function for files that go directily into the home directory
 gohome() {
 	ln -sf $PWD/$1 ~/
 }

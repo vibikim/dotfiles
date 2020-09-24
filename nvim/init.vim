@@ -11,6 +11,8 @@ set number
 set termguicolors
 set splitbelow splitright
 
+set cursorline
+
 " restore cursor to the last position after reopening a file
     autocmd BufReadPost *
       \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
@@ -29,8 +31,11 @@ call plug#begin('~/.local/share/nvim/plugged')
 " REMINDER - on a new system install go for hexokinase (color preview)
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'vimwiki/vimwiki'
+Plug 'franbach/miramare'
 
 call plug#end()
+
+colorscheme miramare
 
 " hexokinase
 let g:Hexokinase_refreshEvents = ['InsertLeave']
@@ -70,3 +75,5 @@ nnoremap <leader>sh :Sex<CR>
 nnoremap <leader>t :24sp<CR>:term<CR>:startinsert<CR>
 " exit insert mode in terminal easier
 tnoremap <C-\> <C-\><C-N>
+
+tnoremap <A-k> <C-w>k
