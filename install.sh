@@ -13,7 +13,6 @@ goconfig() {
 
 gohome .bashrc
 gohome .profile
-gohome .vimrc
 gohome .Xresources
 
 goconfig bspwm
