@@ -14,18 +14,26 @@ nm-applet &
 blueman-applet &
 xfce4-power-manager &
 numlockx on &
-#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/bin/lxqt-policykit-agent &
 
 ###
 # MONITORS
 ###
 if [ "`hostname`" = "beef-book" ]; then
-	bspc monitor "DP-1" -d 1 2 3 4 5 6
-	bspc monitor "DP-4" -d 1 2 3 4 5 6 7 8 9
-	bspc monitor "LVDS1" -d 1 2 3 4 5 6 7 8 9
-	bspc monitor "LVDS-1-1" -d 1 2 3 4 5 6 7 8 9
-	bspc monitor "VGA-0" 7 8 9
+	if [ -n "`polybar -m | grep "DP-4"`" ]; then
+		# for docked desktop use: assign 2 workspaces to the second VGA monitor accordingly if it is connected
+		if [ -n "`polybar -m | grep "VGA-0"`" ]; then
+			bspc monitor "DP-4" -d 1 2 3 4 5 6 7
+			bspc monitor "VGA-0" -d 8 9
+		else
+			bspc monitor "DP-4" -d 1 2 3 4 5 6 7 8 9
+		fi
+	else
+		bspc monitor -d 1 2 3 4 5 6 7 8 9
+		#bspc monitor "DP-1" -d 1 2 3 4 5 6 7 8 9
+		#bspc monitor "LVDS1" -d 1 2 3 4 5 6 7 8 9
+		#bspc monitor "LVDS-1-1" -d 1 2 3 4 5 6 7 8 9
+	fi
 elif [ "`hostname`" = "salad-book" ]; then
 	bspc monitor "eDP-1" -d 1 2 3 4 5 6 7 8 9
 	bspc monitor "HDMI-0" -d 1 2 3 4 5 6 7 8 9
@@ -40,6 +48,7 @@ bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
 bspc config merge_overlapping_monitors true
 bspc config pointer_follows_monitor true
+bspc config center_pseudo_tiled false
 
 #bspc config bottom_padding	25
 #bspc config top_monocle_padding	0
@@ -97,10 +106,11 @@ bspc rule -a Pavucontrol	state=floating
 bspc rule -a copyq		state=floating
 bspc rule -a Blueman-manager	state=floating
 bspc rule -a Arandr		state=floating
-bspc rule -a galculator		state=floating
+bspc rule -a Galculator		state=floating
 bspc rule -a Screenkey		manage=off
 bspc rule -a Navigator		desktop='^1'
 bspc rule -a discord		desktop='^4'
+bspc rule -a dosbox		state=pseudo_tiled
 bspc rule -a AlarmWindow	state=floating
 bspc rule -a pop-up		state=floating
 bspc rule -a setup		state=floating

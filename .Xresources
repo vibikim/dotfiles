@@ -1,38 +1,76 @@
+!! special
+!*.foreground:   #cee3eb
+!*.background:   #010202
+!*.cursorColor:  #cee3eb
+!! *.font:		TerminessTTF Nerd Font Mono
+!
+!! black
+!*.color0:       #020405
+!*.color8:       #51a285
+!
+!! red
+!*.color1:       #0e1416
+!*.color9:       #E36441
+!
+!! green
+!*.color2:       #1d272a
+!*.color10:      #93a350
+!
+!! yellow
+!*.color3:       #314045
+!*.color11:      #e38c41
+!
+!! blue
+!*.color4:       #4c6067
+!*.color12:      #5ac9e6
+!
+!! magenta
+!*.color5:       #6c8791
+!*.color13:      #f947b5
+!
+!! cyan
+!*.color6:       #91b5c2
+!*.color14:      #52d4a9
+!
+!! white
+!*.color7:       #d3e6ed
+!*.color15:      #9fb52e
+
+
 ! special
-*.foreground:   #cee3eb
-*.background:   #010202
-*.cursorColor:  #cee3eb
-! *.font:		TerminessTTF Nerd Font Mono
+*.foreground:   #e7d5e2
+*.background:   #0a0408
+*.cursorColor:  #e7d5e2
 
 ! black
-*.color0:       #020405
-*.color8:       #51a285
+*.color0:       #12080f
+*.color8:       #e2b3ab
 
 ! red
-*.color1:       #0e1416
-*.color9:       #E36441
+*.color1:       #21121d
+*.color9:       #e6c6dc
 
 ! green
-*.color2:       #1d272a
-*.color10:      #93a350
+*.color2:       #382132
+*.color10:      #cbc687
 
 ! yellow
-*.color3:       #314045
-*.color11:      #e38c41
+*.color3:       #57364f
+*.color11:      #e1b0a8
 
 ! blue
-*.color4:       #4c6067
-*.color12:      #5ac9e6
+*.color4:       #7f5173
+*.color12:      #b1b6df
 
 ! magenta
-*.color5:       #6c8791
-*.color13:      #f947b5
+*.color5:       #af719f
+*.color13:      #eecae3
 
 ! cyan
-*.color6:       #91b5c2
-*.color14:      #52d4a9
+*.color6:       #cea4c2
+*.color14:      #65c4cd
 
 ! white
-*.color7:       #d3e6ed
-*.color15:      #9fb52e
+*.color7:       #eddfe8
+*.color15:      #f0c1b9
 

@@ -16,7 +16,7 @@ if [ -z "`pgrep -x polybar`" ]; then
 	BAR="main"
 	#Detect if DP or internal laptop displays are connected and show a polybar for them
 	#TODO look at the other laptop for the name of the HDMI output
-	for m in $(polybar -m | grep "\(DP\|LVDS\|eDP\|DisplayPort\)" | cut -d ':' -f1); do
+	for m in $(polybar -m | grep "\(HDMI\|DP\|LVDS\|eDP\|DisplayPort\)" | cut -d ':' -f1); do
 		MONITOR=$m
 		polybar --reload $BAR -c ~/.config/polybar/config.ini &
 		sleep 1
