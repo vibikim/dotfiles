@@ -10,6 +10,7 @@ set encoding=utf-8
 set number
 set termguicolors
 set splitbelow splitright
+set scrolloff=5
 
 set cursorline
 
@@ -35,16 +36,20 @@ call plug#begin('~/.local/share/nvim/plugged')
 " REMINDER - some plugins have the following external dependencies
 " hexokinase(color preview): go
 " coc(code completion): nodejs, yarn
+" vimdiscord: nvim installed from pip (python extension thingy)
+Plug 'vbe0201/vimdiscord'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'vimwiki/vimwiki'
-Plug 'franbach/miramare'
+"Plug 'franbach/miramare'
+Plug 'cocopon/iceberg.vim'
+Plug 'patstockwell/vim-monokai-tasty'
 Plug 'antoinemadec/FixCursorHold.nvim'
 Plug 'lambdalisue/fern.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
-colorscheme miramare
+colorscheme iceberg
 
 " hexokinase
 let g:Hexokinase_refreshEvents = ['InsertLeave']
