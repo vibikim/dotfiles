@@ -1,0 +1,91 @@
+set previewer ~/.config/lf/preview
+# Basic Settings
+set preview true
+set hidden true
+set color256 true
+set icons true
+set ignorecase true
+
+# Custom Functions
+cmd open ${{
+    case $(file --mime-type "$f" -bL) in
+        text/*|application/json) $EDITOR "$f";;
+        video/*|image/*/application/pdf) xdg-open "$f";;
+        *) xdg-open "$f" ;;
+    esac
+}}
+
+# exectue the file (it has to be executable, ofc)
+map X !$f
+
+cmd mkdir ${{
+  printf "Directory Name: "
+  read ans
+  mkdir $ans
+}}
+
+cmd mkfile ${{
+  printf "File Name: "
+  read ans
+  $EDITOR $ans
+}}
+
+cmd chmod ${{
+  printf "Mode Bits: "
+  read ans
+
+  for file in "$fx"
+  do
+    chmod $ans $file
+  done
+
+  lf -remote 'send reload'
+}}
+
+cmd sudomkfile ${{
+  printf "File Name: "
+  read ans
+  sudo $EDITOR $ans
+}}
+
+# Archive bindings
+cmd unarchive ${{
+  case "$f" in
+      *.zip) unzip "$f" ;;
+      *.tar.gz) tar -xzvf "$f" ;;
+      *.tar.bz2) tar -xjvf "$f" ;;
+      *.tar) tar -xvf "$f" ;;
+      *) echo "Unsupported format" ;;
+  esac
+}}
+
+###
+# Basic Binds
+###
+
+map ua unarchive
+map DD delete
+map x cut
+map x cut
+map y copy
+map <enter> open
+map mf mkfile
+map mr sudomkfile
+map x cut
+map y copy
+map <enter> open
+map mf mkfile
+map mr sudomkfile
+map md mkdirap md mkdir
+
+###
+# Directory shortcuts
+###
+
+map gh :cd ~/
+map gw :cd /run/media/vibikim/WAD
+map gc :cd ~/.config
+map gd :cd ~/Downloads
+map gD :cd ~/Documents
+map gr :cd ~/repos
+map gf :cd ~/facultate

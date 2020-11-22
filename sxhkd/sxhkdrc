@@ -18,7 +18,7 @@ super + shift + f
 super + shift + n
 	thunderbird
 super + shift + Return
-	$FILEMANAGER
+	$TERMINAL -e lf
 
 super + shift + d
 	discord
@@ -137,7 +137,7 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the older or newer node in the focus history
-super + {o,i}sdfsdf
+super + {o,i}
 	bspc wm -h off; \
 	bspc node {older,newer} -f; \
 	bspc wm -h on
@@ -145,6 +145,10 @@ super + {o,i}sdfsdf
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# rotate the tree rooted at the selected node
+super + {r,R}
+	bspc node @parent -R {90,270}
 
 #
 # preselect

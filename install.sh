@@ -18,10 +18,10 @@ gohome .Xresources
 goconfig bspwm
 goconfig dunst
 goconfig polybar
-goconfig kitty
 goconfig sxhkd
 goconfig picom.conf
 goconfig nvim
+goconfig lf
 
 #install fonts
 cp -r $PWD/polybar/fonts/* ~/.local/share/fonts
