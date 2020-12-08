@@ -21,7 +21,7 @@ super + shift + Return
 	$TERMINAL -e lf
 
 super + shift + d
-	discord
+	discord-canary
 super + shift + v
 	pavucontrol
 super + shift + o
