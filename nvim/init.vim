@@ -36,6 +36,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 " REMINDER - some plugins have the following external dependencies
 " hexokinase(color preview): go
 " coc(code completion): nodejs, yarn
+""" TODO write here what to do to install the C syntax server and watnot
 " vimdiscord: nvim installed from pip (python extension thingy)
 Plug 'vbe0201/vimdiscord'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
