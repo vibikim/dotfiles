@@ -29,3 +29,5 @@ What I use right now (stuff I have to install on a fresh linux install):
 * lxapperance (optional)
 * NerdFonts
 * **DASH set as /bin/sh** (Arch Linux)
+
+![screenshot](https://raw.githubusercontent.com/vibikim/dotfiles/master/screenshot.png)
