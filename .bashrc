@@ -2,7 +2,7 @@
 # ~/.bashrc
 #
 
-export vblank_mode=0
+#export vblank_mode=0
 set -o vi
 [[ $- != *i* ]] && return
 
