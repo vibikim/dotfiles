@@ -24,7 +24,7 @@ What I use right now (stuff I have to install on a fresh linux install):
 * nm-applet
 * lxqt-policykit
 * pavucontrol
-* firefox
+* brave
 * rhythmbox -- TODO migrate to a MPD based music player
 * lxapperance (optional)
 * NerdFonts
