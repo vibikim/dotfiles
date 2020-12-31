@@ -28,6 +28,13 @@ if [ "`hostname`" = "beef-book" ]; then
 		else
 			bspc monitor "DP-4" -d 1 2 3 4 5 6 7 8 9
 		fi
+	elif [ -n "`polybar -m | grep "VGA-0"`" ]; then
+		if [ -n "`polybar -m | grep "LVDS-1-1"`" ]; then
+			bspc monitor "LVDS-1-1" -d 1 2 3 4 5 6 7
+			bspc monitor "VGA-0" -d 8 9
+		else
+			bspc monitor "VGA-0" -d 1 2 3 4 5 6 7 8 9
+		fi
 	else
 		bspc monitor -d 1 2 3 4 5 6 7 8 9
 		#bspc monitor "DP-1" -d 1 2 3 4 5 6 7 8 9
