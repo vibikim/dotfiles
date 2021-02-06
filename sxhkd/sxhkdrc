@@ -21,9 +21,11 @@ super + shift + Return
 	$TERMINAL -e lf
 
 super + shift + d
-	discord-canary
+	lightcord
 super + shift + v
 	pavucontrol
+super + shift + g
+	galculator
 super + shift + o
 	$TERMINAL -e htop
 super + shift + Escape
@@ -38,11 +40,19 @@ super + shift + e
 
 # ROFI run menu
 super + d
-	rofi -show run
+	~/.config/rofi/launchers/colorful/launcher.sh
+	#rofi -show run
+# kaomoji picker lol
+super + ctrl + k
+	dmenukaomoji
 
 # Turn off all diplays
 super + alt + c
 	sleep 1; xset dpms force off
+
+# Toggle redshift
+super + alt + s
+	~/.config/bspwm/toggleredshift.sh
 
 # dmenu display selector
 super + p
@@ -101,15 +111,15 @@ super + y
 	bspc node newest.marked.local -n newest.!automatic.local
 
 # swap the current node and the biggest node
-super + m
-	bspc node -s biggest
+#super + m
+	#bspc node -s biggest
 
 #
 # state/flags
 #
 
 # set the window state
-super + {t,alt + t,s,alt + f}
+super + {t,alt + t,s,m}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
