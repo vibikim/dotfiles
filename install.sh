@@ -22,6 +22,7 @@ goconfig sxhkd
 goconfig picom.conf
 goconfig nvim
 goconfig lf
+goconfig emacs
 
 #install fonts
 cp -r $PWD/polybar/fonts/* ~/.local/share/fonts
