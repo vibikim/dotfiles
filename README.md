@@ -19,7 +19,7 @@ What I use right now (stuff I have to install on a fresh linux install):
 * copyq
 * flameshot
 * nitrogen
-* picom/compton
+* picom-git
 * xfce4-power-manager
 * nm-applet
 * lxqt-policykit
