@@ -1,6 +1,6 @@
 #restart sxhkd
 super + alt + x
-	killall -q sxhkd && sleep 1 && sxhkd &
+	killall -q sxhkd && sleep 1 && sxhkd && notify-send "sxhkd restarted &
 ###
 # LAUNCH APPS
 ###
@@ -34,6 +34,13 @@ super + shift + e
 	$TERMINAL -e nvim -c Ex
 
 
+# Toggle stuff 
+
+super + ctrl + alt + s
+	toggle redshift -l 44:26
+super + ctrl + alt + p
+	toggle picom --experimental-backends
+
 ###
 # MISC
 ###
@@ -49,10 +56,6 @@ super + ctrl + k
 # Turn off all diplays
 super + alt + c
 	sleep 1; xset dpms force off
-
-# Toggle redshift
-super + alt + s
-	~/.config/bspwm/toggleredshift.sh
 
 # dmenu display selector
 super + p

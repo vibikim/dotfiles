@@ -2,27 +2,44 @@
 
 # run this function for files that go directily into the home directory
 gohome() {
-	ln -sf $PWD/$1 ~/
+	ln -sfv $PWD/$1 ~/
 }
 
 # run this function for files that go into the .config file
 goconfig() {
-	ln -sf $PWD/$1 ~/.config/
+	ln -sfv $PWD/$1 ~/.config/
 }
 
+# run this function for files that go into the .local/bin file
+gobin() {
+	ln -sfv $PWD/$1 ~/.local/bin/
+}
 
-gohome .bashrc
-gohome .profile
-gohome .Xresources
+echo "This script will make symbolic links to all the dotfiles."
+echo "Be sure to be cd-ed in the directory where the dotfiles repo resides (where this script is located ofc)\n"
+echo "Type \"y\" if you do so we can continue"
+read choice
 
-goconfig bspwm
-goconfig dunst
-goconfig polybar
-goconfig sxhkd
-goconfig picom.conf
-goconfig nvim
-goconfig lf
-goconfig emacs
+if [ "$choice" = "y" ]
+then
+	gohome .bashrc
+	gohome .profile
+	gohome .Xresources
 
-#install fonts
-cp -r $PWD/polybar/fonts/* ~/.local/share/fonts
+	goconfig bspwm
+	goconfig dunst
+	goconfig polybar
+	goconfig sxhkd
+	goconfig picom.conf
+	goconfig nvim
+	goconfig lf
+	goconfig emacs
+
+	gobin bin/dmenukaomoji
+	gobin bin/toggle
+
+	#install fonts
+	echo "Copying polybar fonts"
+	cp -ruv $PWD/polybar/fonts/* ~/.local/share/fonts
+fi
+
