@@ -1,6 +1,6 @@
 #restart sxhkd
 super + alt + x
-	killall -q sxhkd && sleep 1 && sxhkd && notify-send "sxhkd restarted &
+	killall -q sxhkd && sleep 1 && notify-send "sxhkd restarted" && sxhkd &
 ###
 # LAUNCH APPS
 ###
@@ -10,7 +10,7 @@ super + Return
 super + shift + w
 	$BROWSER
 super + shift + m
-	rhythmbox
+	$TERMINAL -e ncmpcpp
 super + shift + v
 	pavucontrol
 super + shift + f
@@ -40,6 +40,8 @@ super + ctrl + alt + s
 	toggle redshift -l 44:26
 super + ctrl + alt + p
 	toggle picom --experimental-backends
+super + ctrl + alt + m
+	toggle mpd #(!)The toggle script has custom behaviour for mpd so it also starts `mpd-rpc` and `mpd-mpris`
 
 ###
 # MISC

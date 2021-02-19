@@ -26,10 +26,9 @@ What I use right now (stuff I have to install on a fresh linux install):
 * lxqt-policykit
 * pavucontrol
 * brave
-* ~~rhythmbox -- TODO migrate to a MPD based music player~~
-* MPD and ncmpcpp
+* MPD and ncmpcpp (includes `mpd-mpris` and `mpd-rich-presence-discord`)
 * lxapperance
 * NerdFonts
-* **DASH set as /bin/sh** (Arch Linux)
+* **DASH set as /bin/sh** (Arch Linux) (! Some scripts won't run corectly if they are run by bash)
 
 ![screenshot](https://raw.githubusercontent.com/vibikim/dotfiles/master/screenshot.png)

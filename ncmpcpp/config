@@ -1,3 +1,42 @@
+# searching stuff
+ignore_leading_the = "yes"
+ignore_diacritics = "yes"
+
+###
+# Appearance
+###
+user_interface = "alternative"
+alternative_header_first_line_format = "$0$aqqu$/a {$4%a$9 - }{$8%t$9}|{$3%f$9} $0$atqq$/a$9"
+alternative_header_second_line_format = "{{$4%b$9}{ [$8%y$9]}}|{$4%D$9}"
+
+song_columns_list_format = "(10)[red]{l} (30)[white]{t} (30)[red]{a} (30)[red]{b}"
+song_list_format = "{$7%a - $9}{$5%t$9}|{$5%f$9}$R{$6%b $9}{$3%l$9}"
+
+playlist_editor_display_mode = "columns"
+search_engine_display_mode = "columns"
+browser_display_mode = "columns"
+playlist_display_mode = "columns"
+
+colors_enabled = "yes"
+main_window_color = "white"
+header_window_color = "red"
+volume_color = "green"
+statusbar_color = "white"
+progressbar_color = "red"
+progressbar_elapsed_color = "white"
+
+progressbar_look =  "▓*░"
+
+now_playing_prefix = "> "
+centered_cursor = "yes"
+
+display_bitrate = "yes"
+enable_window_title = "yes"
+empty_tag_marker = "-EMPTY-"
+
+selected_item_prefix = "* "
+discard_colors_if_item_is_selected = "yes"
+
 #### connection settings #####
 mpd_host = localhost
 mpd_port = 6600

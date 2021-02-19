@@ -2,6 +2,11 @@
 
 if [ -z "`pgrep -x $1`" ]; then
 	$@ &
+	if [ "$1" = mpd ]; then
+		sleep 1
+		mpd-mpris &
+		mpd-rpc &
+	fi
 	notify-send $1 "is now enabled"
 else
 	notify-send $1 "is now disabled"
