@@ -32,6 +32,7 @@ then
 	goconfig sxhkd
 	goconfig picom.conf
 	goconfig nvim
+	goconfig ncmcpp
 	goconfig lf
 	goconfig emacs
 

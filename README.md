@@ -14,6 +14,7 @@ What I use right now (stuff I have to install on a fresh linux install):
 * nemo and lf
 * rofi AND dmenu (weird i know)
 * neovim
+* emacs -- Work In Progress
 * xreader
 * viewnior
 * copyq
@@ -25,8 +26,9 @@ What I use right now (stuff I have to install on a fresh linux install):
 * lxqt-policykit
 * pavucontrol
 * brave
-* rhythmbox -- TODO migrate to a MPD based music player
-* lxapperance (optional)
+* ~~rhythmbox -- TODO migrate to a MPD based music player~~
+* MPD and ncmpcpp
+* lxapperance
 * NerdFonts
 * **DASH set as /bin/sh** (Arch Linux)
 
