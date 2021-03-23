@@ -30,6 +30,7 @@ then
 	goconfig bspwm
 	goconfig dunst
 	goconfig polybar
+	goconfig rofi
 	goconfig sxhkd
 	goconfig picom.conf
 	goconfig nvim
