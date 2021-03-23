@@ -78,11 +78,11 @@ XF86MonBrightnessUp
 
 #Volume control
 XF86Audio{Lower,Raise}Volume
-	amixer -D pulse sset Master 2%{-,+}
+	pactl set-sink-volume @DEFAULT_SINK@ {-,+}2%
 XF86AudioMute
-	amixer -D pulse sset Master toggle
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
 XF86AudioMicMute
-	amixer -D pulse sset Capture toggle
+	pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 #Media keys
 XF86AudioPlay
