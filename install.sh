@@ -25,6 +25,7 @@ then
 	gohome .bashrc
 	gohome .profile
 	gohome .Xresources
+	gohome .doom.d
 
 	goconfig bspwm
 	goconfig dunst
@@ -32,9 +33,8 @@ then
 	goconfig sxhkd
 	goconfig picom.conf
 	goconfig nvim
-	goconfig ncmcpp
+	goconfig ncmpcpp
 	goconfig lf
-	goconfig emacs
 
 	gobin bin/dmenukaomoji
 	gobin bin/toggle
