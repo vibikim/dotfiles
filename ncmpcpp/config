@@ -41,7 +41,7 @@ discard_colors_if_item_is_selected = "yes"
 mpd_host = localhost
 mpd_port = 6600
 mpd_connection_timeout = 5
-mpd_music_dir = /run/media/vibikim/WAD/Music
+mpd_music_dir = /run/media/vibbe/WAD/Music
 
 execute_on_song_change = notify-send "Now Playing" "$(mpc --format '%title% \n %artist% - %album%' current)"
 
