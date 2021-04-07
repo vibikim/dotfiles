@@ -43,7 +43,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 "Plug 'vbe0201/vimdiscord'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'vimwiki/vimwiki'
-"Plug 'franbach/miramare'
+Plug 'franbach/miramare'
 Plug 'cocopon/iceberg.vim'
 Plug 'patstockwell/vim-monokai-tasty'
 Plug 'antoinemadec/FixCursorHold.nvim'

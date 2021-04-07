@@ -9,6 +9,8 @@ super + Return
 	$TERMINAL
 super + shift + w
 	$BROWSER
+super + shift + ctrl + w
+	$BROWSER2
 super + shift + m
 	$TERMINAL -e ncmpcpp
 super + shift + v
@@ -49,7 +51,7 @@ super + ctrl + alt + m
 
 # ROFI run menu
 super + d
-	~/.config/rofi/launchers/colorful/launcher.sh
+	~/.config/rofi/launchers/misc/launcher.sh
 	#rofi -show run
 # kaomoji picker lol
 super + ctrl + k
