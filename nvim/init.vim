@@ -45,6 +45,8 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'vimwiki/vimwiki'
 Plug 'franbach/miramare'
 Plug 'cocopon/iceberg.vim'
+Plug 'sainnhe/sonokai'
+Plug 'sainnhe/everforest'
 Plug 'patstockwell/vim-monokai-tasty'
 Plug 'antoinemadec/FixCursorHold.nvim'
 Plug 'lambdalisue/fern.vim'
@@ -52,7 +54,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
-colorscheme iceberg
+colorscheme sonokai
 
 " hexokinase
 let g:Hexokinase_refreshEvents = ['InsertLeave']
