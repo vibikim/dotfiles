@@ -1,41 +1,40 @@
-!! special
-!*.foreground:   #cee3eb
-!*.background:   #010202
-!*.cursorColor:  #cee3eb
-!! *.font:		TerminessTTF Nerd Font Mono
-!
-!! black
-!*.color0:       #020405
-!*.color8:       #51a285
-!
-!! red
-!*.color1:       #0e1416
-!*.color9:       #E36441
-!
-!! green
-!*.color2:       #1d272a
-!*.color10:      #93a350
-!
-!! yellow
-!*.color3:       #314045
-!*.color11:      #e38c41
-!
-!! blue
-!*.color4:       #4c6067
-!*.color12:      #5ac9e6
-!
-!! magenta
-!*.color5:       #6c8791
-!*.color13:      #f947b5
-!
-!! cyan
-!*.color6:       #91b5c2
-!*.color14:      #52d4a9
-!
-!! white
-!*.color7:       #d3e6ed
-!*.color15:      #9fb52e
+!!!!! Vacuous 2
+! special
+*.foreground:   #d2c5bc
+*.background:   #101010
+*.cursorColor:  #d2c5bc
 
+! black
+*.color0:       #202020
+*.color8:       #606060
+
+! red
+*.color1:       #b91e2e
+*.color9:       #d14548
+
+! green
+*.color2:       #81957c
+*.color10:      #a7b79a
+
+! yellow
+*.color3:       #f9bb80
+*.color11:      #fae3a0
+
+! blue
+*.color4:       #356579
+*.color12:      #7491a1
+
+! magenta
+*.color5:       #2d2031
+*.color13:      #87314e
+
+! cyan
+*.color6:       #0b3452
+*.color14:      #0f829d
+
+! white
+*.color7:       #909090
+*.color15:      #fff0f0
 
 ! special
 !*.foreground:   #e7d5e2
@@ -75,39 +74,41 @@
 !*.color15:      #f0c1b9
 
 
+!!!!! Iceberg
+!
 ! special
-*.foreground:   #c6c8d1
-*.background:   #161821
-*.cursorColor:  #c6c8d1
+!*.foreground:   #c6c8d1
+!*.background:   #161821
+!*.cursorColor:  #c6c8d1
 
 ! black
-*.color0:       #161821
-*.color8:       #6b7089
+!*.color0:       #161821
+!*.color8:       #6b7089
 
 ! red
-*.color1:       #e27878
-*.color9:       #e98989
+!*.color1:       #e27878
+!*.color9:       #e98989
 
 ! green
-*.color2:       #b4be82
-*.color10:      #c0ca8e
+!*.color2:       #b4be82
+!*.color10:      #c0ca8e
 
 ! yellow
-*.color3:       #e2a478
-*.color11:      #e9b189
+!*.color3:       #e2a478
+!*.color11:      #e9b189
 
 ! blue
-*.color4:       #84a0c6
-*.color12:      #91acd1
+!*.color4:       #84a0c6
+!*.color12:      #91acd1
 
 ! magenta
-*.color5:       #a093c7
-*.color13:      #ada0d3
+!*.color5:       #a093c7
+!*.color13:      #ada0d3
 
 ! cyan
-*.color6:       #89b8c2
-*.color14:      #95c4ce
+!*.color6:       #89b8c2
+!*.color14:      #95c4ce
 
 ! white
-*.color7:       #c6c8d1
-*.color15:      #d2d4de
+!*.color7:       #c6c8d1
+!*.color15:      #d2d4de
