@@ -54,3 +54,33 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+;;
+
+; START TABS CONFIG
+;; Create a variable for our preferred tab width
+(setq custom-tab-width 2)
+
+;; Two callable functions for enabling/disabling tabs in Emacs
+(defun disable-tabs () (setq indent-tabs-mode nil))
+(defun enable-tabs  ()
+  (local-set-key (kbd "TAB") 'tab-to-tab-stop)
+  (setq indent-tabs-mode t)
+  (setq tab-width custom-tab-width))
+
+;; Hooks to Enable Tabs
+(add-hook 'prog-mode-hook 'enable-tabs)
+;; Hooks to Disable Tabs
+(add-hook 'lisp-mode-hook 'disable-tabs)
+(add-hook 'emacs-lisp-mode-hook 'disable-tabs)
+
+;; Language-Specific Tweaks
+(setq-default python-indent-offset custom-tab-width) ;; Python
+(setq-default js-indent-level custom-tab-width)      ;; Javascript
+
+;; Making electric-indent behave sanely
+(setq-default electric-indent-inhibit t)
+
+;; Make the backspace properly erase the tab instead of
+;; removing 1 space at a time.
+(setq backward-delete-char-untabify-method 'hungry)
+; END TABS CONFIG
