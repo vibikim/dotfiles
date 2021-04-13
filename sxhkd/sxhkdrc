@@ -54,7 +54,7 @@ super + d
 	~/.config/rofi/launchers/misc/launcher.sh
 	#rofi -show run
 # kaomoji picker lol
-super + ctrl + k
+ctrl + alt + k
 	dmenukaomoji
 
 # Turn off all diplays
@@ -72,6 +72,9 @@ super + w
 #Take a screenshot
 Print
 	flameshot gui
+shift + Print
+	sleep 2 && flameshot gui
+
 #Brightness control
 XF86MonBrightnessDown
 	xbacklight -dec 5
