@@ -11,10 +11,10 @@ What I use right now (stuff I have to install on a fresh linux install):
 * polybar
 * dunst
 * st	-- my build is [right here ](https://github.com/vibikim/st)
-* nemo and lf
+* pcmanfm and lf
 * rofi AND dmenu (weird i know)
 * neovim
-* emacs -- Work In Progress
+* DOOM emacs
 * xreader
 * viewnior
 * copyq
@@ -26,7 +26,7 @@ What I use right now (stuff I have to install on a fresh linux install):
 * lxqt-policykit
 * pavucontrol
 * brave
-* MPD and ncmpcpp (includes `mpd-mpris` and `mpd-rich-presence-discord`)
+* MPD and ncmpcpp (includes `mpd-mpris`, `mpd-rich-presence-discord` and `mpdscribble`)
 * lxapperance
 * NerdFonts
 * **DASH set as /bin/sh** (Arch Linux) (! Some scripts won't run corectly if they are run by bash)

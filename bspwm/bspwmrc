@@ -3,6 +3,8 @@
 ###
 # AUTOSTART
 ###
+# TODO launch apps based on the hostname
+# TODO stop using `hostname` and use the $HOSTNAME variable instead
 xsetroot -cursor_name left_ptr	#fix background cursor being different
 sxhkd &
 ~/.config/polybar/launch.sh &

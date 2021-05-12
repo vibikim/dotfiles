@@ -82,7 +82,7 @@ map md mkdirap md mkdir
 ###
 
 map gh :cd ~/
-map gw :cd /run/media/vibikim/WAD
+map gw :cd /run/media/vibbe/WAD
 map gc :cd ~/.config
 map gd :cd ~/Downloads
 map gD :cd ~/Documents

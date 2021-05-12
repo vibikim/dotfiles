@@ -6,7 +6,7 @@ export PATH=$PATH:$HOME/.local/bin
 # Default programs:
 export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="librewolf"
+export BROWSER="firefox"
 export BROWSER2="brave"
 export READER="xreader"
-export FILEMANAGER="thunar"
+export FILEMANAGER="pcmanfm"

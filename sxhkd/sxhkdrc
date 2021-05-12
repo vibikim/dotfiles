@@ -33,7 +33,7 @@ super + shift + o
 super + shift + Escape
 	xfce4-taskmanager
 super + shift + e
-	$TERMINAL -e nvim -c Ex
+	emacs
 
 
 # Toggle stuff 
