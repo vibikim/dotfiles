@@ -24,7 +24,7 @@ numlockx on &
 if [ "`hostname`" = "setsuna" ]; then
 	bspc monitor "HDMI-A-1" -d 1 2 3 4 5 6 7
 	bspc monitor "DVI-D-0" -d 8 9
-elif [ "`hostname`" = "beef-book" ]; then
+elif [ "`hostname`" = "flare" ]; then
 	if [ -n "`polybar -m | grep "DP-1"`" ]; then
 		# for docked desktop use: assign 2 workspaces to the second VGA monitor accordingly if it is connected
 		if [ -n "`polybar -m | grep "VGA-0"`" ]; then
