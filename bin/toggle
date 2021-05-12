@@ -6,6 +6,7 @@ if [ -z "`pgrep -x $1`" ]; then
 		sleep 1
 		mpd-mpris &
 		mpd-rpc --no-idle --dont-broadcast-the-paused-state &
+		mpdscribble &
 		#those tho will kill themselves when mpd gets killed so we're good
 	fi
 	notify-send $1 "is now enabled"
