@@ -7,6 +7,6 @@ export PATH=$PATH:$HOME/.local/bin
 export EDITOR="nvim"
 export TERMINAL="st"
 export BROWSER="firefox"
-export BROWSER2="iridium"
+export BROWSER2="iridium-browser"
 export READER="xreader"
 export FILEMANAGER="thunar"
